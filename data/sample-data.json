@@ -1,0 +1,94 @@
+{
+  "lastUpdate": "2026-02-11T00:00:00+09:00",
+  "n8n": {
+    "date": "2026-02-11",
+    "summary": {
+      "profit": 2340,
+      "trades": 8,
+      "winRate": 0.75
+    },
+    "trades": [
+      {
+        "time": "23:45",
+        "pair": "BTC/JPY",
+        "type": "sell",
+        "price": 15234500,
+        "amount": 0.001,
+        "profit": 450
+      },
+      {
+        "time": "21:30",
+        "pair": "ETH/JPY",
+        "type": "buy",
+        "price": 352100,
+        "amount": 0.01,
+        "profit": null
+      }
+    ],
+    "status": {
+      "binance": "ok",
+      "bitflyer": "ok",
+      "avgLatency": 250
+    }
+  },
+  "cryptopro": {
+    "latest": {
+      "timestamp": "2026-02-11T21:00:00+09:00",
+      "pair": "BTC/JPY",
+      "timeframe": "4h",
+      "judgment": "buy",
+      "confidence": 0.85,
+      "price": 15180000,
+      "indicators": {
+        "rsi": 42,
+        "macd": "golden_cross",
+        "ma": "uptrend",
+        "bollinger": "lower_bounce"
+      },
+      "reasoning": "4時間足で下降トレンドが終了し、反転の兆し。RSIが過剰売り圏から脱却しつつあり、MACDのゴールデンクロスが確認された。サポートライン（¥15,100,000）で反発確認。リスクリワード比 1:2.5 で良好。",
+      "plan": {
+        "entry": 15180000,
+        "target": 15550000,
+        "stop": 15030000
+      },
+      "chartImage": "data/charts/2026-02-11-2100.png"
+    },
+    "history": [
+      {
+        "time": "21:00",
+        "judgment": "buy",
+        "price": 15180000,
+        "reason": "ゴールデンクロス確認"
+      },
+      {
+        "time": "15:00",
+        "judgment": "hold",
+        "price": 15050000,
+        "reason": "レンジ相場、方向性不明"
+      },
+      {
+        "time": "09:00",
+        "judgment": "sell",
+        "price": 15320000,
+        "reason": "RSI過熱、利確推奨"
+      }
+    ]
+  },
+  "comparison": {
+    "weekly": {
+      "n8n": {
+        "profit": 12340,
+        "winRate": 0.78
+      },
+      "cryptopro": {
+        "profit": 0,
+        "status": "training"
+      }
+    }
+  },
+  "learningNotes": [
+    "✅ 4時間足の精度が1時間足より高い傾向",
+    "⚠️ 急騰後の反発を取りすぎて損切りに注意",
+    "💡 RSI 30以下からの反転パターンが有効"
+  ]
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仮想通貨統合ダッシュボード | cryptopro x cryptowatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🪙 仮想通貨統合ダッシュボード</h1>
+            <div class="update-time">最終更新: <span id="lastUpdate">2026-02-11 00:00</span></div>
+        </header>
+
+        <main>
+            <!-- n8n自動取引セクション -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>📊 n8n自動取引システム</h2>
+                    <span class="badge badge-active">稼働中</span>
+                </div>
+                
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>日報サマリー</h3>
+                        <div class="stat-group">
+                            <div class="stat">
+                                <span class="label">本日収益</span>
+                                <span class="value positive">+¥2,340</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">取引回数</span>
+                                <span class="value">8回</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">勝率</span>
+                                <span class="value">75%</span>
+                            </div>
+                        </div>
+                        <div class="report-link">
+                            <a href="#" class="btn-link">詳細レポート →</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>稼働状況</h3>
+                        <div class="status-list">
+                            <div class="status-item">
+                                <span class="indicator green"></span>
+                                <span>Binance: 正常</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="indicator green"></span>
+                                <span>bitFlyer: 正常</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="indicator yellow"></span>
+                                <span>API応答: 平均250ms</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>最新取引履歴</h3>
+                    <table class="trade-table">
+                        <thead>
+                            <tr>
+                                <th>時刻</th>
+                                <th>ペア</th>
+                                <th>タイプ</th>
+                                <th>価格</th>
+                                <th>数量</th>
+                                <th>損益</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>23:45</td>
+                                <td>BTC/JPY</td>
+                                <td class="type-sell">売</td>
+                                <td>¥15,234,500</td>
+                                <td>0.001</td>
+                                <td class="positive">+¥450</td>
+                            </tr>
+                            <tr>
+                                <td>21:30</td>
+                                <td>ETH/JPY</td>
+                                <td class="type-buy">買</td>
+                                <td>¥352,100</td>
+                                <td>0.01</td>
+                                <td class="pending">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- cryptopro演習セクション -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>🤖 cryptopro 模擬取引演習</h2>
+                    <span class="badge badge-training">演習中</span>
+                </div>
+
+                <div class="card highlight">
+                    <h3>最新チャート分析 <span class="timestamp">21:00</span></h3>
+                    
+                    <div class="analysis-grid">
+                        <div class="analysis-main">
+                            <div class="chart-placeholder">
+                                <img src="data/charts/latest.png" alt="チャートスナップショット" id="latestChart">
+                            </div>
+                            
+                            <div class="judgment">
+                                <div class="judgment-badge buy">買い推奨</div>
+                                <div class="confidence">信頼度: 85%</div>
+                            </div>
+                        </div>
+
+                        <div class="analysis-details">
+                            <h4>📈 テクニカル分析</h4>
+                            <ul class="indicator-list">
+                                <li><strong>RSI(14):</strong> 42 → 売られすぎ寄り</li>
+                                <li><strong>MACD:</strong> ゴールデンクロス形成中</li>
+                                <li><strong>移動平均:</strong> 5MA > 25MA 上昇トレンド</li>
+                                <li><strong>ボリンジャー:</strong> 下限反発</li>
+                            </ul>
+
+                            <h4>💭 判断理由</h4>
+                            <p class="reasoning">
+                                4時間足で下降トレンドが終了し、反転の兆し。
+                                RSIが過剰売り圏から脱却しつつあり、
+                                MACDのゴールデンクロスが確認された。
+                                サポートライン（¥15,100,000）で反発確認。
+                                リスクリワード比 1:2.5 で良好。
+                            </p>
+
+                            <h4>🎯 仮想エントリープラン</h4>
+                            <div class="entry-plan">
+                                <div><strong>エントリー:</strong> ¥15,180,000</div>
+                                <div><strong>利確目標:</strong> ¥15,550,000 (+2.4%)</div>
+                                <div><strong>損切り:</strong> ¥15,030,000 (-1.0%)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>本日の分析履歴</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="time">21:00</div>
+                            <div class="content">
+                                <span class="judgment-mini buy">買い</span>
+                                BTC/JPY ¥15,180,000 → ゴールデンクロス確認
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">15:00</div>
+                            <div class="content">
+                                <span class="judgment-mini hold">様子見</span>
+                                BTC/JPY ¥15,050,000 → レンジ相場、方向性不明
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="time">09:00</div>
+                            <div class="content">
+                                <span class="judgment-mini sell">売り</span>
+                                BTC/JPY ¥15,320,000 → RSI過熱、利確推奨
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 比較・学習セクション -->
+            <section class="dashboard-section">
+                <div class="section-header">
+                    <h2>📚 システム比較 & 学習ログ</h2>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>週間パフォーマンス比較</h3>
+                        <div class="comparison-chart">
+                            <div class="bar-group">
+                                <div class="bar-label">n8n</div>
+                                <div class="bar-container">
+                                    <div class="bar bar-n8n" style="width: 78%">+¥12,340 (78%勝率)</div>
+                                </div>
+                            </div>
+                            <div class="bar-group">
+                                <div class="bar-label">cryptopro</div>
+                                <div class="bar-container">
+                                    <div class="bar bar-cryptopro" style="width: 0%">演習中（実取引なし）</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>学習メモ</h3>
+                        <ul class="learning-notes">
+                            <li>✅ 4時間足の精度が1時間足より高い傾向</li>
+                            <li>⚠️ 急騰後の反発を取りすぎて損切りに注意</li>
+                            <li>💡 RSI 30以下からの反転パターンが有効</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Powered by cryptopro 🤖 & cryptowatch 👁️ | Data from OKX, Bybit, n8n</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
