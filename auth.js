@@ -5,7 +5,7 @@ const ALLOWED_EMAILS = [
 ];
 
 // Google Client ID（後で設定）
-const GOOGLE_CLIENT_ID = 'YOUR_GOOGLE_CLIENT_ID_HERE';
+const GOOGLE_CLIENT_ID = '95470268366-fu8s39i42edeqct9dopblfelohi7k210.apps.googleusercontent.com';
 
 let currentUser = null;
 
