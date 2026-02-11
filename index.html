@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>仮想通貨統合ダッシュボード | cryptopro x cryptowatch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
+    <div id="dashboard-content">
     <div class="container">
         <header>
             <h1>🪙 仮想通貨統合ダッシュボード</h1>
@@ -27,15 +30,15 @@
                         <div class="stat-group">
                             <div class="stat">
                                 <span class="label">本日収益</span>
-                                <span class="value positive">+¥2,340</span>
+                                <span class="value">データ待機中</span>
                             </div>
                             <div class="stat">
                                 <span class="label">取引回数</span>
-                                <span class="value">8回</span>
+                                <span class="value">-</span>
                             </div>
                             <div class="stat">
                                 <span class="label">勝率</span>
-                                <span class="value">75%</span>
+                                <span class="value">-</span>
                             </div>
                         </div>
                         <div class="report-link">
@@ -47,16 +50,8 @@
                         <h3>稼働状況</h3>
                         <div class="status-list">
                             <div class="status-item">
-                                <span class="indicator green"></span>
-                                <span>Binance: 正常</span>
-                            </div>
-                            <div class="status-item">
-                                <span class="indicator green"></span>
-                                <span>bitFlyer: 正常</span>
-                            </div>
-                            <div class="status-item">
                                 <span class="indicator yellow"></span>
-                                <span>API応答: 平均250ms</span>
+                                <span>データ待機中...</span>
                             </div>
                         </div>
                     </div>
@@ -77,20 +72,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>23:45</td>
-                                <td>BTC/JPY</td>
-                                <td class="type-sell">売</td>
-                                <td>¥15,234,500</td>
-                                <td>0.001</td>
-                                <td class="positive">+¥450</td>
-                            </tr>
-                            <tr>
-                                <td>21:30</td>
-                                <td>ETH/JPY</td>
-                                <td class="type-buy">買</td>
-                                <td>¥352,100</td>
-                                <td>0.01</td>
-                                <td class="pending">-</td>
+                                <td colspan="6" style="text-align: center; color: var(--text-muted);">取引データ待機中...</td>
                             </tr>
                         </tbody>
                     </table>
@@ -122,26 +104,17 @@
                         <div class="analysis-details">
                             <h4>📈 テクニカル分析</h4>
                             <ul class="indicator-list">
-                                <li><strong>RSI(14):</strong> 42 → 売られすぎ寄り</li>
-                                <li><strong>MACD:</strong> ゴールデンクロス形成中</li>
-                                <li><strong>移動平均:</strong> 5MA > 25MA 上昇トレンド</li>
-                                <li><strong>ボリンジャー:</strong> 下限反発</li>
+                                <li style="color: var(--text-muted);">分析データ待機中...</li>
                             </ul>
 
                             <h4>💭 判断理由</h4>
                             <p class="reasoning">
-                                4時間足で下降トレンドが終了し、反転の兆し。
-                                RSIが過剰売り圏から脱却しつつあり、
-                                MACDのゴールデンクロスが確認された。
-                                サポートライン（¥15,100,000）で反発確認。
-                                リスクリワード比 1:2.5 で良好。
+                                分析データ待機中...
                             </p>
 
                             <h4>🎯 仮想エントリープラン</h4>
                             <div class="entry-plan">
-                                <div><strong>エントリー:</strong> ¥15,180,000</div>
-                                <div><strong>利確目標:</strong> ¥15,550,000 (+2.4%)</div>
-                                <div><strong>損切り:</strong> ¥15,030,000 (-1.0%)</div>
+                                <div style="color: var(--text-muted);">データ待機中...</div>
                             </div>
                         </div>
                     </div>
@@ -151,24 +124,9 @@
                     <h3>本日の分析履歴</h3>
                     <div class="timeline">
                         <div class="timeline-item">
-                            <div class="time">21:00</div>
-                            <div class="content">
-                                <span class="judgment-mini buy">買い</span>
-                                BTC/JPY ¥15,180,000 → ゴールデンクロス確認
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="time">15:00</div>
-                            <div class="content">
-                                <span class="judgment-mini hold">様子見</span>
-                                BTC/JPY ¥15,050,000 → レンジ相場、方向性不明
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="time">09:00</div>
-                            <div class="content">
-                                <span class="judgment-mini sell">売り</span>
-                                BTC/JPY ¥15,320,000 → RSI過熱、利確推奨
+                            <div class="time">-</div>
+                            <div class="content" style="color: var(--text-muted);">
+                                分析履歴待機中...
                             </div>
                         </div>
                     </div>
@@ -188,13 +146,13 @@
                             <div class="bar-group">
                                 <div class="bar-label">n8n</div>
                                 <div class="bar-container">
-                                    <div class="bar bar-n8n" style="width: 78%">+¥12,340 (78%勝率)</div>
+                                    <div class="bar bar-n8n" style="width: 10%; color: var(--text-muted);">データ待機中</div>
                                 </div>
                             </div>
                             <div class="bar-group">
                                 <div class="bar-label">cryptopro</div>
                                 <div class="bar-container">
-                                    <div class="bar bar-cryptopro" style="width: 0%">演習中（実取引なし）</div>
+                                    <div class="bar bar-cryptopro" style="width: 10%; color: var(--text-muted);">演習中（実取引なし）</div>
                                 </div>
                             </div>
                         </div>
@@ -216,7 +174,9 @@
             <p>Powered by cryptopro 🤖 & cryptowatch 👁️ | Data from OKX, Bybit, n8n</p>
         </footer>
     </div>
+    </div>
 
+    <script src="auth.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
