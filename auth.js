@@ -36,14 +36,12 @@ function showLoginPage() {
     document.body.innerHTML = `
         <div class="auth-container">
             <div class="auth-card">
-                <h1>🪙 仮想通貨統合ダッシュボード</h1>
-                <p class="auth-description">このダッシュボードは認証が必要です</p>
                 <div id="g_id_onload"
                      data-client_id="${GOOGLE_CLIENT_ID}"
                      data-callback="handleCredentialResponse">
                 </div>
                 <div class="g_id_signin" data-type="standard"></div>
-                <p class="auth-note">許可されたGoogleアカウントでログインしてください</p>
+                <p class="auth-note">※ 許可されたユーザーのみ利用可能です</p>
             </div>
         </div>
     `;
@@ -54,8 +52,8 @@ function showUnauthorized() {
     document.body.innerHTML = `
         <div class="auth-container">
             <div class="auth-card">
-                <h1>🔒 アクセス拒否</h1>
-                <p class="auth-description">このアカウントは認可されていません</p>
+                <h1>🔒</h1>
+                <p class="auth-description">アクセスが許可されていません</p>
                 <button onclick="logout()" class="logout-btn">ログアウト</button>
             </div>
         </div>

@@ -20,11 +20,7 @@
 }
 
 .auth-card h1 {
-    font-size: 1.75rem;
-    background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
@@ -37,7 +33,7 @@
 .auth-note {
     color: var(--text-muted);
     font-size: 0.85rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .logout-btn {

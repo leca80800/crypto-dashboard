@@ -53,7 +53,7 @@
 
 5. **承認済みのリダイレクトURI**：
    ```
-   https://leca80800.github.io/crypto-dashboard/
+   https://leca80800.github.io/dashboard/crypto-dashboard/
    ```
 
 6. **「作成」**をクリック
@@ -91,7 +91,7 @@
 ## ✅ 完了確認
 
 1. **ダッシュボードにアクセス**：
-   https://leca80800.github.io/crypto-dashboard/
+   https://leca80800.github.io/dashboard/crypto-dashboard/
 
 2. **Googleログインボタンが表示される**
 
